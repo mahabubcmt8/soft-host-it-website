@@ -167,6 +167,52 @@
     display: block;
     margin: auto;
 }
+.services{
+    background-color: #111204;
+}
+.services ul{
+    display: block;
+}
+.services ul li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+    background-color: #B9FD50;
+    font-weight: 600;
+    line-height: 50px;
+}
+.service-load-more-btn{
+    background: transparent;
+    border: 0; 
+    color: #fff;
+}
+.service-load-more-btn i{
+    color: #B9FD50;
+}
+.benifits span{
+    color: #B9FD50;
+    font-weight: 600;
+}
+.benifits h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+.benifits p{
+    margin-top: 15px;
+    color: #fff;
+    font-size: 24px;
+}
+.benifits a{
+    background-color: #B9FD50;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
 
 
 
@@ -237,7 +283,9 @@
         color: #B9FD50;
     }
     .our-work img{
-        margin-top: 0px !important;
+        margin-top: 10px !important;
+        display: block;
+        margin: auto;
     }
     
 }
