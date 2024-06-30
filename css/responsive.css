@@ -1,0 +1,327 @@
+/* 1200px ===================================== */
+@media (max-width: 1200px) {
+    .header-banner .heading h1 {
+        font-size: 72px;
+    }
+
+    .header-banner p {
+        font-size: 20px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 7%;
+    }
+
+    .carousel-control-prev {
+        left: -8%;
+    }
+
+    .carousel-control-next {
+        right: -8%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+}
+
+/* 992px ===================================== */
+@media (max-width: 992px) {
+    .header-banner .heading h1 {
+        font-size: 56px;
+    }
+
+    .header-banner p {
+        font-size: 18px;
+    }
+
+    .header-software img {
+        width: 80%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 9%;
+    }
+
+    .carousel-control-prev {
+        left: -6%;
+    }
+
+    .carousel-control-next {
+        right: -6%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .our-work .title {
+        font-size: 40px;
+    }
+    .our-work p {
+        font-size: 16px;
+    }
+    .load-more-btn {
+        padding: 11px 18px;
+    }
+}
+
+/* 768px ===================================== */
+@media (max-width: 768px) {
+    .header-banner .heading h1 {
+        font-size: 40px;
+    }
+
+    .header-banner p {
+        font-size: 16px;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 14px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 12%;
+    }
+
+    .carousel-control-prev {
+        left: -4%;
+    }
+
+    .carousel-control-next {
+        right: -4%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .login input,
+    .login button {
+        width: 70%;
+    }
+
+    .search-box {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .search-input {
+        width: 200px; /* Adjust as needed for smaller devices */
+    }
+
+    .search-box:hover > .search-input,
+    .search-input:focus {
+        width: 200px; /* Adjust as needed for smaller devices */
+        margin: 0 8px;
+    }
+
+    .search-box:hover > .search-btn,
+    .search-input:focus + .search-btn {
+        background: #B9FD50; /* Keep the background same as the original */
+    }
+    .how-we-work {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .how-we-work h3 {
+        font-size: 35px;
+    }
+    .how-we-work p {
+        font-size: 20px;
+    }
+    .how-we-work .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .our-work .title {
+        font-size: 30px;
+    }
+    .our-work p {
+        font-size: 14px;
+    }
+    .load-more-btn {
+        padding: 10px 15px;
+    }
+    .our-work .row {
+        margin-top: 50px !important;
+    }
+    .our-work img {
+        margin-top: 0 !important;
+    }
+}
+
+/* 576px ===================================== */
+@media (max-width: 576px) {
+    .header-banner .heading h1 {
+        font-size: 32px;
+    }
+
+    .header-banner p {
+        font-size: 14px;
+        margin-top: 10px !important;
+    }
+
+    .header-software img {
+        width: 80%;
+    }
+
+    .domain-list ul li {
+        list-style: none;
+        float: left;
+        text-align: center;
+        width: 185px;
+        font-size: 14px;
+        margin-top: 5px;
+        color: #fff;
+        font-weight: 600;
+        border-right: 1px solid #B9FD50;
+    }
+
+    .domain-list ul li span {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #B9FD50;
+    }
+
+    .our-work img {
+        margin-top: 10px !important;
+        display: block;
+        margin: auto;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 15%;
+    }
+
+    .carousel-control-prev {
+        left: -2%;
+    }
+
+    .carousel-control-next {
+        right: -2%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .login input,
+    .login button {
+        width: 90%;
+    } 
+
+    .search-box {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .search-input {
+        width: 400px; /* Adjust as needed for smaller devices */
+    }
+
+    .search-box:hover > .search-input,
+    .search-input:focus {
+        width: 400px; /* Adjust as needed for smaller devices */
+        margin: 0 8px;
+    }
+
+    .search-box:hover > .search-btn,
+    .search-input:focus + .search-btn {
+        background: #B9FD50; /* Keep the background same as the original */
+    }
+    .search-btn{
+        margin-top: -40px !important;
+    }
+    .domain h1 {
+        font-size: 28px;
+    }
+    .domain-list ul li {
+        width: 100%;
+        float: none;
+        border-right: none;
+        border-bottom: 1px solid #B9FD50;
+        padding: 10px 0;
+    }
+    .domain-list ul li:last-child {
+        border-bottom: none;
+    }
+    .domain-list ul li span {
+        font-size: 18px;
+    }
+}
+
+/* 400px ===================================== */
+@media (max-width: 400px) {
+    .login input,
+    .login button {
+        width: 100%;
+    }
+
+    .login h3,
+    .login h1 {
+        font-size: 1.5em;
+    }
+
+    .login h1 {
+        font-size: 2em;
+    }
+    .search-box {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .search-input {
+        width: 300px; /* Adjust as needed for smaller devices */
+    }
+
+    .search-box:hover > .search-input,
+    .search-input:focus {
+        width: 300px; /* Adjust as needed for smaller devices */
+        margin: 0 8px;
+    }
+
+    .search-box:hover > .search-btn,
+    .search-input:focus + .search-btn {
+        background: #B9FD50; /* Keep the background same as the original */
+    }
+    .search-btn{
+        margin-top: -40px !important;
+    }
+    .domain h1 {
+        font-size: 24px;
+    }
+    .domain-list ul li {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+    .domain-list ul li span {
+        font-size: 16px;
+    }
+    .how-we-work h3 {
+        font-size: 25px;
+    }
+    .how-we-work p {
+        font-size: 18px;
+    }
+    .how-we-work a {
+        padding: 10px 20px;
+    }
+}
