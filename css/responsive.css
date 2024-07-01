@@ -27,6 +27,7 @@
         height: 45px;
         line-height: 45px;
     }
+    
 }
 
 /* 992px ===================================== */
@@ -325,3 +326,26 @@
         padding: 10px 20px;
     }
 }
+
+
+
+@media (min-width:704px) {
+    .table-four {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  
+  @media (min-width:994px) {
+    .table-four {
+      max-width: 800px;
+    }
+  }
+  
+  @media (min-width:1200px) {
+    .table-four {
+      max-width: none;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+    }
+  }
