@@ -130,7 +130,7 @@
 
     .search-box:hover > .search-btn,
     .search-input:focus + .search-btn {
-        background: #B9FD50; /* Keep the background same as the original */
+        background: var(--color1); /* Keep the background same as the original */
     }
     .how-we-work {
         padding-top: 50px;
@@ -188,14 +188,14 @@
         margin-top: 5px;
         color: #fff;
         font-weight: 600;
-        border-right: 1px solid #B9FD50;
+        border-right: 1px solid var(--color1);
     }
 
     .domain-list ul li span {
         display: block;
         font-size: 14px;
         font-weight: 600;
-        color: #B9FD50;
+        color: var(--color1);
     }
 
     .our-work img {
@@ -246,7 +246,7 @@
 
     .search-box:hover > .search-btn,
     .search-input:focus + .search-btn {
-        background: #B9FD50; /* Keep the background same as the original */
+        background: var(--color1); /* Keep the background same as the original */
     }
     .search-btn{
         margin-top: -40px !important;
@@ -258,7 +258,7 @@
         width: 100%;
         float: none;
         border-right: none;
-        border-bottom: 1px solid #B9FD50;
+        border-bottom: 1px solid var(--color1);
         padding: 10px 0;
     }
     .domain-list ul li:last-child {
@@ -301,7 +301,7 @@
 
     .search-box:hover > .search-btn,
     .search-input:focus + .search-btn {
-        background: #B9FD50; /* Keep the background same as the original */
+        background: var(--color1); /* Keep the background same as the original */
     }
     .search-btn{
         margin-top: -40px !important;

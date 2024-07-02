@@ -11,28 +11,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="description" content="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software" />
     <meta name="author" content="Soft Host IT, POS Software" />
+    <!-- Bootstrap CSS & font awsome -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <!-- vendor css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/lightbox/css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/keyframes.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <style>
-        .typed::after{
-            content: "|";
-            font-size: 150%;
-            line-height: 30px;
-            animation: blink .75s step-end infinite;
-        }
-
-        @keyframes blink {
-            from, to { color: transparent }
-            50% { color: rgba(245, 245, 245) }
-        }
-    </style>
 </head>
 
 <body>
-    
     <!-- ====================== Navbar ====================== -->
     <div id="menu">
         <div class="container">
@@ -75,9 +68,9 @@
                         </ul>
 
                         <img src="images/whatsapp.svg" width="30px" style="margin-right: 10px;">
-                        <span style="margin-right: 30px; color: #B9FD50">
+                        <span style="margin-right: 30px; color: var(--color1)">
                             Contact Us <br>
-                            <a href="https://wa.me/1723883106" target="_blank" style="text-decoration: none; color: #B9FD50">+880 1723-883106</a>
+                            <a href="https://wa.me/1723883106" target="_blank" style="text-decoration: none; color: var(--color1)">+880 1723-883106</a>
                         </span>
                         <a href="login.html" class="header-login-btn"><img src="images/header/Login-buttons.png" width="120px"></a>
                     </div>
@@ -242,30 +235,86 @@
                     <button class="load-more-btn" data-aos="fade-up"><i class="fa-solid fa-spinner"></i> Load More</button>
                 </div>
             </div>
-            <div class="row mt-5 justify-content-center" style="margin-top: 150px !important;">
+            <div class="row mt-5 justify-content-center">
                 <div class="col-md-3 col-sm-6 col-xs-6 col-12">
-                    <img src="images/our-works/EDO_square_02.png" alt="" class="img-fluid">
+                    <div class="card" style="border: 0;">
+                        <a href="images/our-works/1.jpg" data-lightbox="models" data-title="Taking some pictures while giving the gift to the client">
+                            <img class="card-img-top" style="height: 300px;" src="images/our-works/1.jpg">
+                        </a>
+                        <div class="card-body bg-info text-white" style="border-radius: 0px 0px 20px 20px;">
+                          <h6 class="card-title text-center f-700">Taking some pictures while giving the gift to the client</h6>
+                        </div>
+                      </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6 col-12">
-                    <img src="images/our-works/dfat-poster.png" alt="" class="img-fluid" style="margin-top: -100px;">
+                    <div class="card" style="border: 0;">
+                        <a href="images/our-works/2.jpg" data-lightbox="models" data-title="Photo session with the client after delivering the brickwork software">
+                            <img class="card-img-top" style="height: 300px;" src="images/our-works/2.jpg">
+                        </a>
+                        <div class="card-body bg-info text-white" style="border-radius: 0px 0px 20px 20px;">
+                          <h6 class="card-title text-center f-700">Photo session with the client after delivering the brickwork software</h6>
+                        </div>
+                      </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6 col-12">
-                    <img src="images/our-works/key-insights.png" alt="" class="img-fluid">
+                    <div class="card" style="border: 0;">
+                        <a href="images/our-works/3.jpg" data-lightbox="models" data-title="Photo session while giving software training to client">
+                            <img class="card-img-top"  style="height: 300px;" src="images/our-works/3.jpg">
+                        </a>
+                        <div class="card-body bg-info text-white" style="border-radius: 0px 0px 20px 20px;">
+                          <h6 class="card-title text-center f-700">Photo session while giving software training to client</h6>
+                        </div>
+                      </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6 col-12">
-                    <img src="images/our-works/oxfam-appeal-square.png" alt="" class="img-fluid" style="margin-top: -100px;">
+                    <div class="card" style="border: 0;">
+                        <a href="images/our-works/4.jpg" data-lightbox="models" data-title="Taking photos during software delivery at mobile showroom">
+                            <img class="card-img-top" style="height: 300px;" src="images/our-works/4.jpg">
+                        </a>
+                        <div class="card-body bg-info text-white" style="border-radius: 0px 0px 20px 20px;">
+                          <h6 class="card-title text-center f-700">Taking photos during software delivery at mobile showroom</h6>
+                        </div>
+                      </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 col-12 mt-3">
-                    <img src="images/our-works/cvgt-square.png" alt="" class="img-fluid">
+                <div class="col-md-3 col-sm-6 col-xs-6 col-12 mt-5">
+                    <div class="card" style="border: 0;">
+                        <a href="images/our-works/5.jpg" data-lightbox="models" data-title="Training time during software delivery at jewelery shop">
+                            <img class="card-img-top" style="height: 300px;" src="images/our-works/5.jpg">
+                        </a>
+                        <div class="card-body bg-info text-white" style="border-radius: 0px 0px 20px 20px;">
+                          <h6 class="card-title text-center f-700">Training time during software delivery at jewelery shop</h6>
+                        </div>
+                      </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 col-12 mt-3">
-                    <img src="images/our-works/dropbottle-square.png" alt="" class="img-fluid" style="margin-top: -80px !important;">
+                <div class="col-md-3 col-sm-6 col-xs-6 col-12 mt-5">
+                    <div class="card" style="border: 0;">
+                        <a href="images/our-works/6.jpg" data-lightbox="models" data-title="Some time to deliver the clothing store software">
+                            <img class="card-img-top" style="height: 300px;" src="images/our-works/6.jpg">
+                        </a>
+                        <div class="card-body bg-info text-white" style="border-radius: 0px 0px 20px 20px;">
+                          <h6 class="card-title text-center f-700">Some time to deliver the clothing store software</h6>
+                        </div>
+                      </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 col-12 mt-3">
-                    <img src="images/our-works/dropbottle-square.png" alt="" class="img-fluid">
+                <div class="col-md-3 col-sm-6 col-xs-6 col-12 mt-5">
+                    <div class="card" style="border: 0;">
+                        <a href="images/our-works/7.jpg" data-lightbox="models" data-title="Software delivery at Floor Tiles showroomn">
+                            <img class="card-img-top" style="height: 300px;" src="images/our-works/7.jpg">
+                        </a>
+                        <div class="card-body bg-info text-white" style="border-radius: 0px 0px 20px 20px;">
+                          <h6 class="card-title text-center f-700">Software delivery at Floor Tiles showroom</h6>
+                        </div>
+                      </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 col-12 mt-3">
-                    <img src="images/our-works/dfat-poster.png" alt="" class="img-fluid" style="margin-top: -80px !important;">
+                <div class="col-md-3 col-sm-6 col-xs-6 col-12 mt-5">
+                    <div class="card" style="border: 0;">
+                        <a href="images/our-works/8.jpg" data-lightbox="models" data-title="Some time to gift company diary and pen to client">
+                            <img class="card-img-top" style="height: 300px;" src="images/our-works/8.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body bg-info text-white" style="border-radius: 0px 0px 20px 20px;">
+                          <h6 class="card-title text-center f-700">Some time to gift company diary and pen to client</h6>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -275,7 +324,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-12" data-aos="fade-right">
-                    <span class="text-center d-block" style="color: #B9FD50; text-transform: uppercase;">Our capabilities</span>
+                    <span class="text-center d-block" style="color: var(--color1); text-transform: uppercase;">Our capabilities</span>
                     <h1 class="text-center text-white">We can help you with...</h1><br>
                     <ul>
                         <li>Web Design & UI</li>
@@ -313,46 +362,46 @@
             </div>
             <div class="service-list mt-5">
                 <div class="row">
-                    <div class="col-md-4 p-4" data-aos="fade-right" style="border-right: 1px solid #B9FD5017; border-bottom: 1px solid #B9FD5017">
+                    <div class="col-md-4 p-4" data-aos="fade-right" style="border-right: 1px solid var(--color10); border-bottom: 1px solid var(--color10)">
                         <img src="images/service-icon/1.png" alt="">
                         <h3 class="mt-3 text-white">1. Web Design</h3>
                         <p class="text-white">Put all your requests in the design queue in <br> Trello, and we’ll knock them out 1 by 1.</p>
                     </div>
-                    <div class="col-md-4 p-4" data-aos="fade-bottom" style="border-right: 1px solid #B9FD5017; border-bottom: 1px solid #B9FD5017">
+                    <div class="col-md-4 p-4" data-aos="fade-bottom" style="border-right: 1px solid var(--color10); border-bottom: 1px solid var(--color10)">
                         <img src="images/service-icon/2.png" alt="">
                         <h3 class="mt-3 text-white">2. Web Development</h3>
                         <p class="text-white">High-end work from a dedicated team of senior <br> designers that's always available when you need <br> it.</p>
                     </div>
-                    <div class="col-md-4 p-4" data-aos="fade-up" style="border-bottom: 1px solid #B9FD5017">
+                    <div class="col-md-4 p-4" data-aos="fade-up" style="border-bottom: 1px solid var(--color10)">
                         <img src="images/service-icon/3.png" alt="">
                         <h3 class="mt-3 text-white">3. Android & IOS App</h3>
                         <p class="text-white">We build every site on Webflow, making <br> them dynamic, accessible, and easily <br> scalable. It’s easy for you like Squarespace <br> but better.
                         </p>
                     </div>
-                    <div class="col-md-4 p-4" data-aos="fade-right" style="border-right: 1px solid #B9FD5017; border-bottom: 1px solid #B9FD5017">
+                    <div class="col-md-4 p-4" data-aos="fade-right" style="border-right: 1px solid var(--color10); border-bottom: 1px solid var(--color10)">
                         <img src="images/service-icon/4.png" alt="">
                         <h3 class="mt-3 text-white">4. ERP Software</h3>
                         <p class="text-white">Get regular updates on your projects and <br> can expect to receive your designs within 2-3 days.
                         </p>
                     </div>
-                    <div class="col-md-4 p-4" data-aos="fade-up" style="border-right: 1px solid #B9FD5017; border-bottom: 1px solid #B9FD5017">
+                    <div class="col-md-4 p-4" data-aos="fade-up" style="border-right: 1px solid var(--color10); border-bottom: 1px solid var(--color10)">
                         <img src="images/service-icon/5.png" alt="">
                         <h3 class="mt-3 text-white">5. SMS</h3>
                         <p class="text-white">Pay the same every month, no surprises. <br> You can use it for as long as you want and <br> cancel anytime.</p>
                     </div>
-                    <div class="col-md-4 p-4" data-aos="fade-left" style="border-bottom: 1px solid #B9FD5017">
+                    <div class="col-md-4 p-4" data-aos="fade-left" style="border-bottom: 1px solid var(--color10)">
                         <img src="images/service-icon/5.png" alt="">
                         <h3 class="mt-3 text-white">6. Logo Design</h3>
                         <p class="text-white">Get the power of dedicated design team <br> at fraction of the cost of full-time <br> employee. ($54k/yr vs. $112k/yr).
                         </p>
                     </div>
-                    <div class="col-md-4 p-4" data-aos="fade-right" style="border-right: 1px solid #B9FD5017;">
+                    <div class="col-md-4 p-4" data-aos="fade-right" style="border-right: 1px solid var(--color10);">
                         <img src="images/service-icon/7.png" alt="">
                         <h3 class="mt-3 text-white">7. Customized for you</h3>
                         <p class="text-white">We design and build custom for you. We're <br> never starting from a template unless you <br> want that? You don't, right?
                         </p>
                     </div>
-                    <div class="col-md-4 p-4" data-aos="fade-up" style="border-right: 1px solid #B9FD5017;">
+                    <div class="col-md-4 p-4" data-aos="fade-up" style="border-right: 1px solid var(--color10);">
                         <img src="images/service-icon/8.png" alt="">
                         <h3 class="mt-3 text-white">8. Digital Marketing</h3>
                         <p class="text-white">We’re here when you need us and not on <br> payroll when you don’t.
@@ -567,13 +616,13 @@
 
                         <ul class="nav nav-pills mb-3 justify-content-center my-5" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
-                              <button class="nav-link active" id="pills-home-tab" style="color: #B9FD50;" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Shared</button>
+                              <button class="nav-link active" id="pills-home-tab" style="color: var(--color1);" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Shared</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="pills-profile-tab" style="color: #B9FD50;" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">VPS</button>
+                              <button class="nav-link" id="pills-profile-tab" style="color: var(--color1);" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">VPS</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="pills-contact-tab" style="color: #B9FD50;" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Dedicated</button>
+                              <button class="nav-link" id="pills-contact-tab" style="color: var(--color1);" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Dedicated</button>
                             </li>
                           </ul>
                           
@@ -809,7 +858,97 @@
                           </div>
                 </div>
             </div>
-            
+        </div>
+    </section>
+
+    <!-- ======================================= Technologies ======================================= -->
+    <section class="technologies py-5">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-md-12">
+                    <h2 class="text-center f-700">TECHNOLOGIES</h2>
+                    <h5 class="text-center mt-4">All the technologies we work with and serve our clients <br> And we always support updated technology</h5>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-2">
+                    <img src="images/technologies/12-php-1.svg" width="100px">
+                </div>
+                <div class="col-md-2">
+                    <img src="images/technologies/laravel.png" width="100px">
+                </div>
+                <div class="col-md-2">
+                    <img src="images/technologies/02-javascript-1.svg" width="100px">
+                </div>
+                <div class="col-md-2">
+                    <img src="images/technologies/03-react-1.svg" width="100px">
+                </div>
+                <div class="col-md-2">
+                    <img src="images/technologies/04-angular-js.svg" width="100px">
+                </div>
+                <div class="col-md-2">
+                    <img src="images/technologies/01-java-horizontal.svg" width="100px">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-2">
+                    <img src="images/technologies/05-vuejs.svg" width="100px">
+                </div>
+                <div class="col-md-2">
+                    <img src="images/technologies/06-solidity.svg" width="100px">
+                </div>
+                <div class="col-md-2">
+                    <img src="images/technologies/07-node-js.svg" width="100px">
+                </div>
+                <div class="col-md-2">
+                    <img src="images/technologies/08-golang.svg" width="100px">
+                </div>
+                <div class="col-md-2">
+                    <img src="images/technologies/10-swift.svg" width="100px">
+                </div>
+                <div class="col-md-2">
+                    <img src="images/technologies/11-react-native-1.svg" width="100px">
+                </div>
+            </div>
+            <div class="row mt-5 justify-content-center mb-5">
+                <div class="col-md-2">
+                    <img src="images/technologies/13-css-3.svg" width="100px">
+                </div>
+                <div class="col-md-2">
+                    <img src="images/technologies/14-html-5.svg" width="100px">
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-12">
+                    <h1 class="text-center pt-5">Our Payment Methods</h1>
+                    <h5 class="text-center">We accept payments from customers through all trusted channels.</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="payment-method-carousel">
+                    <div class="owl-carousel owl-theme">
+                      <div class="item">
+                        <img src="images/payment_method/bkash.svg">
+                      </div>
+                      <div class="item">
+                        <img src="images/payment_method/nogod.svg">
+                      </div>
+                      <div class="item">
+                        <img src="images/payment_method/rocket.svg">
+                      </div>
+                      <div class="item">
+                        <img src="images/payment_method/ssl.svg" style="width: 200px !important; margin-top: 20px;">
+                      </div>
+                      <div class="item">
+                        <img src="images/payment_method/nexus.png" style="width: 60px !important;">
+                      </div>
+                      <div class="item">
+                        <img src="images/payment_method/eastern-bank-plc.png" style="width: 200px !important; margin-top: 20px;">
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </div>
     </section>
 
@@ -818,25 +957,45 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-6">
-                    <h3 class="text-white">Company</h3>
+                    <h3 class="text-white">Hosting</h3>
+                    <hr>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Shared Hosting</a></li>
+                        <li><a href="#">Reseller Hosting</a></li>
+                        <li><a href="#">Master Reseller Hosting</a></li>
+                        <li><a href="#">Email Hosting</a></li>
+                    </ul>
+                    <br>
+                    <h3 class="text-white">Domain</h3>
+                    <hr>
+                    <ul>
+                        <li><a href="#">Register Domain</a></li>
+                        <li><a href="#">Transfer Domain</a></li>
+                        <li><a href="#">Domain Transfer</a></li>
+                        <li><a href="#">Dot bd(.bd) Domain</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-6">
+                    <h3 class="text-white">Server</h3>
+                    <hr>
+                    <ul>
+                        <li><a href="#">Dedicated Server</a></li>
+                        <li><a href="#">Linux VPS</a></li>
+                        <li><a href="#">Windows VPS</a></li>
+                        <li><a href="#">Email Marketing Server</a></li>
+                        <li><a href="#">Remote Desktop Server</a></li>
+                    </ul><br>
                     <h3 class="text-white">Services</h3>
                     <ul>
-                        <li><a href="#">Domain</a></li>
-                        <li><a href="#">Hosting</a></li>
-                        <li><a href="#">Website</a></li>
-                        <li><a href="#">Android</a></li>
-                        <li><a href="#">Software</a></li>
+                        <li><a href="#">Bulk SMS</a></li>
+                        <li><a href="#">SSL Certificate</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Web Development</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-6">
                     <h3 class="text-white">Our Software</h3>
+                    <hr>
                     <ul>
                         <li><a href="#">B-hisab</a></li>
                         <li><a href="#">T-hisab</a></li>
@@ -844,13 +1003,23 @@
                         <li><a href="#">Babsaye</a></li>
                         <li><a href="#">Electronics</a></li>
                     </ul>
+                    <br>
+                    <h3 class="text-white">Company</h3>
+                    <hr>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Why Choose Us</a></li>
+                        <li><a href="#">Payment Method</a></li>
+                    </ul>
                 </div>
                 <div class="col-md-3 col-6">
-                    <h3 class="text-white">Contact With Us</h3>
-                    <img src="images/soft-hoost-it-logo.svg" alt="">
+                    <h3 class="text-white">Contact Us</h3>
+                    <hr>
+                    <img src="images/soft-hoost-it-logo-white.svg" class="mt-3" alt="">
                     <ul>
                         <li><a href="#"><i class="fa-solid fa-phone"></i>&nbsp; +88 01723 883 106</a></li>
                         <li><a href="mailto:softhostit@gmail.com"><i class="fa-solid fa-envelope"></i>&nbsp; softhostit@gmail.com</a></li>
+                        <li><a href="https://wa.me/1723883106" target="_blank"><i class="fa-brands fa-whatsapp"></i>&nbsp; +880 1723-883106</a></li>
                         <li>
                             <a href="#">
                                 <i class="fa-solid fa-location-dot"></i> &nbsp;
@@ -859,15 +1028,32 @@
                             </a>
                         </li>
                     </ul>
+                    <img src="images/payment_method/bkash.svg" width="80px">
+                    <img src="images/payment_method/nogod.svg" width="80px">
+                    <img src="images/payment_method/rocket.svg" width="80px">
+                    <img src="images/payment_method/ssl.svg" class="mt-3">
                 </div>
             </div>
         </div>
     </footer>
+    <div class="bottom-footer" style="background: #222;">
+        <div class="container">
+            <div class="row align-items-center justify-content-center py-4">
+                <div class="col-md-12">
+                    <p class="text-center text-white mb-0">Copyright &copy; 2023. All rights reserved <a href="https://softhostit.com/" target="_blank" style="color: var(--color-1) !important;">Soft Host IT</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <button class="backToTopBtn"><i class="fas fa-angle-up"></i></button>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ======================================= Scripts ======================================= -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://billing.softhostit.com/public/support-cdn/liveChat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="vendor/lightbox/js/lightbox-plus-jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
     <script>
         $(document).ready(function () {
@@ -891,13 +1077,20 @@
             $("#startLiveChat img").attr('alt', '');
             $("#startLiveChat img").attr('title', '');
         });
-    </script>
-    <script>
         AOS.init();
-    </script>
-    <script>
-        "use strict";$(".navigation__item").click(function(){if(location.pathname.replace(/^\//,"")===this.pathname.replace(/^\//,"")&&location.hostname===this.hostname){var e=$(this.hash);if(e=e.length?e:$("[name="+this.hash.slice(1)+"]"),e.length)return $("html,body").animate({scrollTop:e.offset().top},800),!1}return!1}),window.sr=ScrollReveal().reveal(".table-one, .table-two, .table-three, .table-four");
-    </script>
+        $(function() {
+            // Owl Carousel
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                items: 4,
+                margin: 10,
+                loop: true,
+                autoplay: true,
+                nav: true
+            });
+        });
+
+        </script>
 </body>
 
 </html>
