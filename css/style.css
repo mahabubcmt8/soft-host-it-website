@@ -95,18 +95,20 @@ html{
 
   
 .navbar {
-    background: transparent !important;
+  background: var(--color2) !important;
 }
 #menu {
     width: 100%;
-    background-color: var(--color2);
+    /* background-color: var(--color2); */
     position: fixed;
     top: 0;
     left: 0; 
     transition: background-color 0.3s; 
     z-index: 2020; 
-    height: 80px;  
+    height: 80px; 
+    background: var(--color2) !important;
 }
+
 .navbar-toggler .fas {
     color: var(--color1) !important;
     font-size: 1.5rem;
@@ -119,39 +121,32 @@ html{
     font-style: normal;
 }
 .navbar .navbar-nav .nav-item {
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 
 .header {
     background-color: var(--color2);
-    background-image: url("../images/header/background.png");
+    background-image: url("../images/header/background1.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     height: auto; 
 }
-.overlay-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0; /* Ensure overlay-image has lower z-index */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-}
+
 .header-login-btn {
-    background: transparent;
-    border: none;
-    box-shadow: none;
+    background: #B9FD50;
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    padding: 8px 30px;
+    border-radius: 8px;
 }
 .tech-list-images {
     display: inline-block;
-    width: 20px; /* You can adjust the initial size as needed */
-    height: 20px; /* You can adjust the initial size as needed */
-    animation: growShrink 2s infinite; /* 2s is the duration of the animation cycle */
+    width: 20px; 
+    height: 20px; 
+    animation: growShrink 2s infinite; 
 }
 
 /* banner section */
@@ -254,33 +249,36 @@ html{
     border-radius: 8px;
     margin-top: 10px;
 }
+.how-we-work-img{
+  width: 300px;
+}
 /* Our Work ========================= */
-.our-work .title{
-    font-weight: 700;
-    font-size: 50px;
+.our-work .title {
+  font-weight: 700;
+  font-size: 50px;
 }
-.our-work p{
-    font-weight: 600;
+.our-work p {
+  font-weight: 600;
 }
-.load-more-btn{
-    padding: 12px 20px;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin-top: 10px;
-    display: block;
-    margin: auto;
+.load-more-btn {
+  padding: 12px 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: block;
+  margin: auto;
 }
-.our-work .card{
+.our-work .card {
   border-radius: 20px;
   border: 0 !important;
   transition: 0.5s;
   position: relative;
 }
-.our-work .card:hover{
+.our-work .card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.our-work .card .card-body{
+.our-work .card .card-body {
   position: absolute;
   bottom: 0;
   padding-bottom: 0;
@@ -290,11 +288,13 @@ html{
   visibility: hidden;
   transition: visibility 0.5s ease;
 }
-.our-work .card:hover .card-body{
+.our-work .card:hover .card-body {
   visibility: visible;
 }
-.our-work .card-img-top{
-    border-radius: 10px;
+.our-work .card-img-top {
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
 }
 
 /* Services ======================================= */
@@ -407,43 +407,42 @@ html{
 
 
 .product .card {
-    background: #F9F9F9;
-    border-radius: 30px;     
-    box-shadow: 0px 2.93px 5.86px 0px #0000000D;
-    border: none !important;
+  background: #F9F9F9;
+  border-radius: 30px;     
+  box-shadow: 0px 2.93px 5.86px 0px #0000000D;
+  border: none !important;
 }
-.product .card p{
-    font-size: 12px;
+.product .card p {
+  font-size: 12px;
 }
-.our-product{
-  background-color: var(--color2);
+.our-product {
+background-color: var(--color2);
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5%;
+top: 50%;
+transform: translateY(-50%);
+width: 5%;
 }
 
 .carousel-control-prev {
-  left: -10%;
+left: -10%;
 }
 
 .carousel-control-next {
-    right: -10%;
+  right: -10%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: black; 
-  background-image: none; 
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+background-color: black; 
+background-image: none; 
+border-radius: 50%;
+width: 50px;
+height: 50px;
+line-height: 50px;
 }
-
 
 
 .pricing-list{
@@ -1016,10 +1015,10 @@ html{
     border: 1px solid #eee;
     padding: 30px !important;
     min-height: 150px !important;
-  }
+}
   .payment-method-carousel .item img {
-    margin: auto;
-    width: 120px !important;
+      margin: auto;
+      width: 120px !important;
   }
    .team .card{
     background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
