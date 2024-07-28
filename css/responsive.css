@@ -94,6 +94,7 @@
     .carousel-control-next{
         display: none;
     }
+    
 }
 @media (max-width: 575.98px) {
     .navbar .navbar-nav .nav-item .nav-link {
@@ -184,6 +185,7 @@
     .carousel-control-next{
         display: none;
     }
+    
 }
 
 /* Small devices (landscape phones, 576px and up) */

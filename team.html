@@ -23,6 +23,81 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/keyframes.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .team-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* min-height: 100vh; */
+            }
+        .box {
+            width: 100%;
+            max-width: 200px;
+            height: 300px;
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transition: 0.3s ease-in-out;
+            border-radius: 10px;
+            }
+            .box:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+            }
+            .box:hover .card-footer {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            }
+            .box:hover .imgBx {
+            transform: scale(1.3);
+            }
+            .box .imgBx {
+            transition: 0.3s ease-in-out;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            }
+            .box .imgBx img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            }
+            .box .card-footer {
+            font-size: 12px;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(100%);
+            transition: 0.3s ease-in-out;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            }
+            .box .card-footer h3 {
+                padding: 2.5px 0;
+                font-size: 18px;
+                font-weight: 600;
+                color: #B9FD50;
+                text-transform: uppercase;
+            }
+            .box .card-footer h4 {
+                padding: 2.5px 0;
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff;
+                /* text-transform: uppercase; */
+            }
+    </style>
 </head>
 
 <body>
@@ -62,9 +137,9 @@
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="about.html" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">About Us</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="team.html" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Team</a></li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Contact Us</a></li>
                                 </ul>
                             </li>
@@ -86,126 +161,124 @@
         </div>
     </div> 
     <!-- <div style="height: 100px;"></div> -->
-    <div class="team py-5" style="margin-top: 200px;">
+    <div class="team py-5" style="margin-top: 150px;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <h1 class="text-center">Our Strong Teem Members</h1>
+                    <h3 class="text-center" style="color: #B9FD50; font-weight: bold;">Soft Host IT</h3>
                     <p class="text-center">Our strong team members, with their diverse expertise and unwavering <br> commitment, continually drive our success, enabling us to tackle challenges and <br> achieve remarkable results together.</p>
                 </div>
             </div>
-            <div class="row mt-5 justify-content-center">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="images/team/Palash.jpg" class="img-fluid">
-                        <div class="card-body">
-                            <h3 class="text-center">Polish Palash</h3>
-                            <h5 class="text-center">C.E.O</h5>
-                        </div>
+            <div class="team-container" style="margin-top: 0 !important; margin-bottom: 0 !important">
+                <div class="box">
+                    <div class="imgBx">
+                      <img src="images/team/Palash.jpg" alt="">
+                    </div>
+                    <div class="card-footer">
+                      <h3>Palsah &nbsp; Hossain</h3>
+                      <h4>C.E.O</h4>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="images/team/Nusrat.jpg" class="img-fluid">
-                        <div class="card-body">
-                            <h3 class="text-center">Nusrat Jahan Akhi</h3>
-                            <h5 class="text-center">C.O.O</h5>
-                        </div>
+                <div class="box">
+                    <div class="imgBx">
+                      <img src="images/team/Nusrat.jpg" alt="">
+                    </div>
+                    <div class="card-footer">
+                      <h3>Nusrat Jahan Akhi</h3>
+                      <h4>C.O.O</h4>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="images/team/Shahidul.jpg" class="img-fluid">
-                        <div class="card-body">
-                            <h3 class="text-center">Sk. Shahidul Islam</h3>
-                            <h5 class="text-center">Graphics Designer</h5>
-                        </div>
+            </div>
+            <div class="team-container">
+                <div class="box">
+                    <div class="imgBx">
+                      <img src="images/team/Shahidul.jpg" alt="">
+                    </div>
+                    <div class="card-footer">
+                      <h3>Sk. Shahidul Islam</h3>
+                      <h4>Business Development Manager</h4>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="images/team/ahmed.jpg" class="img-fluid">
-                        <div class="card-body">
-                            <h3 class="text-center">Ejaz Gazi
-                            </h3>
-                            <h5 class="text-center">Software Eng.</h5>
-                        </div>
+                <div class="box">
+                    <div class="imgBx">
+                      <img src="images/team/Joyti.jpg" alt="">
+                    </div>
+                    <div class="card-footer">
+                      <h3>Akid Javed Jyoti</h3>
+                      <h4>Marketing Executive</h4>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="images/team/Zillur1.png" class="img-fluid">
-                        <div class="card-body">
-                            <h3 class="text-center">Zillur Rahman
-                            </h3>
-                            <h5 class="text-center">Jr. Software Eng.</h5>
-                        </div>
+                <div class="box">
+                    <div class="imgBx">
+                      <img src="images/team/ahmed.jpg" alt="">
+                    </div>
+                    <div class="card-footer">
+                      <h3>Ejaz Gazi</h3>
+                      <h4>Software Eng.</h4>
                     </div>
                 </div>
-                <div class="col-md-3 mt-5">
-                    <div class="card">
-                        <img src="images/team/Ashik.png" class="img-fluid">
-                        <div class="card-body">
-                            <h3 class="text-center">Ashik Hasan
-                            </h3>
-                            <h5 class="text-center">Jr. Software Eng.</h5>
-                        </div>
+                <div class="box">
+                    <div class="imgBx">
+                      <img src="images/team/Zillur1.png" alt="">
+                    </div>
+                    <div class="card-footer">
+                      <h3>Zillur Rahman</h3>
+                      <h4>Jr. Software Eng.</h4>
                     </div>
                 </div>
-                <div class="col-md-3 mt-5">
-                    <div class="card">
-                        <img src="images/team/mahabub.jpg" class="img-fluid">
-                        <div class="card-body">
-                            <h3 class="text-center">Md Mahabub Alam
-                            </h3>
-                            <h5 class="text-center">Jr. Software Eng.</h5>
-                        </div>
+                <div class="box">
+                    <div class="imgBx">
+                      <img src="images/team/Ashik.png" alt="">
+                    </div>
+                    <div class="card-footer">
+                      <h3>Ashik Hasan</h3>
+                      <h4>Jr. Software Eng.</h4>
                     </div>
                 </div>
-                <div class="col-md-3 mt-5">
-                    <div class="card">
-                        <img src="images/team/Robi2.png" class="img-fluid">
-                        <div class="card-body">
-                            <h3 class="text-center">Robiul Korim</h3>
-                            <h5 class="text-center"> Office Manager</h5>
-                        </div>
+                <div class="box">
+                    <div class="imgBx">
+                      <img src="images/team/mahabub.png" alt="">
+                    </div>
+                    <div class="card-footer">
+                      <h3>Md Mahabub Alam</h3>
+                      <h4>Jr. Software Eng.</h4>
                     </div>
                 </div>
-                <div class="col-md-3 mt-5">
-                    <div class="card">
-                        <img src="images/team/Suchanda.jpg" class="img-fluid">
-                        <div class="card-body">
-                            <h3 class="text-center">Suchanda Hira</h3>
-                            <h6 class="text-center">Coustommer Relation Manager</h6>
-                        </div>
+                <div class="box">
+                    <div class="imgBx">
+                      <img src="images/team/Robi.jpg" alt="">
+                    </div>
+                    <div class="card-footer">
+                      <h3>Robiul Korim</h3>
+                      <h4>Office Manager</h4>
                     </div>
                 </div>
-                <div class="col-md-3 mt-5">
-                    <div class="card">
-                        <img src="images/team/Mila2.png" class="img-fluid">
-                        <div class="card-body">
-                            <h3 class="text-center">Mila Akter</h3>
-                            <h6 class="text-center"> Coustommer Relation Manager</h6>
-                        </div>
+                <div class="box">
+                    <div class="imgBx">
+                      <img src="images/team/Suchanda.jpg" alt="">
+                    </div>
+                    <div class="card-footer">
+                      <h3>Suchanda Hira</h3>
+                      <h4>Coustommer Relation Manager</h4>
                     </div>
                 </div>
-                
-                <div class="col-md-3 mt-5">
-                    <div class="card">
-                        <img src="images/team/Joyti.jpg" class="img-fluid">
-                        <div class="card-body">
-                            <h3 class="text-center">Akid Javed Jyoti</h3>
-                            <h5 class="text-center">Marketing Executive</h5>
-                        </div>
+                <div class="box">
+                    <div class="imgBx">
+                      <img src="images/team/Mila2.png" alt="">
+                    </div>
+                    <div class="card-footer">
+                      <h3>Mila Akter</h3>
+                      <h4>Coustommer Relation Manager</h4>
                     </div>
                 </div>
-                <div class="col-md-3 mt-5">
-                    <div class="card">
-                        <img src="images/team/ismail.jpg" class="img-fluid">
-                        <div class="card-body">
-                            <h3 class="text-center">Ismail Prodhan</h3>
-                            <h5 class="text-center">UX/UI Designer</h5>
-                        </div>
+                <div class="box">
+                    <div class="imgBx">
+                      <img src="images/team/ismail.jpg" alt="">
+                    </div>
+                    <div class="card-footer">
+                      <h3>Ismail Prodhan</h3>
+                      <h4>UI/UX Designer</h4>
                     </div>
                 </div>
             </div>
@@ -216,74 +289,74 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-6">
-                    <h3 class="text-white">Hosting</h3>
+                    <h3 class="text-white" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Hosting</h3>
                     <hr>
                     <ul>
-                        <li><a href="#">Shared Hosting</a></li>
-                        <li><a href="#">Reseller Hosting</a></li>
-                        <li><a href="#">Master Reseller Hosting</a></li>
-                        <li><a href="#">Email Hosting</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Shared Hosting</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Reseller Hosting</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Master Reseller Hosting</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Email Hosting</a></li>
                     </ul>
                     <br>
-                    <h3 class="text-white">Domain</h3>
+                    <h3 class="text-white" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Domain</h3>
                     <hr>
                     <ul>
-                        <li><a href="#">Register Domain</a></li>
-                        <li><a href="#">Transfer Domain</a></li>
-                        <li><a href="#">Domain Transfer</a></li>
-                        <li><a href="#">Dot bd(.bd) Domain</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Register Domain</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Transfer Domain</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Domain Transfer</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Dot bd(.bd) Domain</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-6">
-                    <h3 class="text-white">Server</h3>
+                    <h3 class="text-white" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Server</h3>
                     <hr>
                     <ul>
-                        <li><a href="#">Dedicated Server</a></li>
-                        <li><a href="#">Linux VPS</a></li>
-                        <li><a href="#">Windows VPS</a></li>
-                        <li><a href="#">Email Marketing Server</a></li>
-                        <li><a href="#">Remote Desktop Server</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Dedicated Server</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Linux VPS</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Windows VPS</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Email Marketing Server</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Remote Desktop Server</a></li>
                     </ul><br>
-                    <h3 class="text-white">Services</h3>
+                    <h3 class="text-white" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Services</h3>
                     <ul>
-                        <li><a href="#">Bulk SMS</a></li>
-                        <li><a href="#">SSL Certificate</a></li>
-                        <li><a href="#">SEO</a></li>
-                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Bulk SMS</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">SSL Certificate</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">SEO</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Web Development</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-6">
-                    <h3 class="text-white">Our Software</h3>
+                    <h3 class="text-white" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Our Software</h3>
                     <hr>
                     <ul>
-                        <li><a href="#">B-hisab</a></li>
-                        <li><a href="#">T-hisab</a></li>
-                        <li><a href="#">AmarHisab</a></li>
-                        <li><a href="#">Babsaye</a></li>
-                        <li><a href="#">Electronics</a></li>
+                        <li><a href="https://amarhisab.com/" target="_blank" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">AmarHisab</a></li>
+                        <li><a href="https://babsaye.com/" target="_blank" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Babsaye</a></li>
+                        <li><a href="https://bhisab.com/" target="_blank" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">B-hisab</a></li>
+                        <li><a href="https://t-hisab.com/" target="_blank" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">T-hisab</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Electronics</a></li>
                     </ul>
 
-                    <h3 class="text-white">Company</h3>
+                    <h3 class="text-white" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Company</h3>
                     <hr>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Why Choose Us</a></li>
-                        <li><a href="#">Payment Method</a></li>
+                        <li><a href="about.html" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">About Us</a></li>
+                        <li><a href="team.html" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Team Member</a></li>
+                        <li><a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Payment Method</a></li>
                     </ul>
                     <div class="social">
                         <ul>
                             <li>
-                                <a href="https://www.facebook.com/softhostit/" target="_blank">
+                                <a href="https://www.facebook.com/softhostit/" target="_blank" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">
                                     <i class="fa-brands fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/soft-host-it-252829247/" target="_blank">
+                                <a href="https://www.linkedin.com/in/soft-host-it-252829247/" target="_blank" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/channel/UCcMiAcbrAOJ7sokb_Ls1f5w/videos" target="_blank">
+                                <a href="https://www.youtube.com/channel/UCcMiAcbrAOJ7sokb_Ls1f5w/videos" target="_blank" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">
                                     <i class="fa-brands fa-youtube"></i>
                                 </a>
                             </li>
@@ -293,13 +366,13 @@
                 <div class="col-md-3 col-6">
                     <h3 class="text-white">Contact Us</h3>
                     <hr>
-                    <img src="images/soft-hoost-it-logo-white.svg" class="mt-3">
+                    <img src="images/soft-hoost-it-logo-white.svg" class="mt-3" alt="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">
 
                     <ul class="mt-4">
-                        <li><a href="https://wa.me/1723883106" target="_blank"><i class="fa-brands fa-whatsapp"></i>&nbsp; +880 1723-883106</a></li>
-                        <li><a href="mailto:softhostit@gmail.com"><i class="fa-solid fa-envelope"></i>&nbsp; softhostit@gmail.com</a></li>
+                        <li><a href="https://wa.me/1723883106" target="_blank" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software"><i class="fa-brands fa-whatsapp"></i>&nbsp; +880 1723-883106</a></li>
+                        <li><a href="mailto:softhostit@gmail.com" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software"><i class="fa-solid fa-envelope"></i>&nbsp; softhostit@gmail.com</a></li>
                         <li>
-                            <a href="#">
+                            <a href="#" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">
                                 <i class="fa-solid fa-location-dot"></i> &nbsp;
                                 Dhaka Office: Dhaka, Banasree. Block#M, House#08 Rd07, Dhaka 1219
                             </a>
@@ -307,25 +380,25 @@
                         <li>
                             <a href="#">
                                 <i class="fa-solid fa-location-dot"></i> &nbsp;
-                                Khulna Office: Khulna Office82, Khan Jahan Ali Road, Khulna.
+                                Khulna Office: Khulna Office: 82, Khan Jahan Ali Road, Khulna.
                             </a>
                         </li>
                     </ul>
-                    <img src="images/payment_method/bkash.svg" width="80px">
-                    <img src="images/payment_method/nogod.svg" width="80px">
-                    <img src="images/payment_method/rocket.svg" width="80px">
+                    <img src="images/payment_method/bkash.svg" width="80px" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software" alt="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">
+                    <img src="images/payment_method/nogod.svg" width="80px" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software" alt="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">
+                    <img src="images/payment_method/rocket.svg" width="80px" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software" alt="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">
                     <img src="images/payment_method/ssl.svg" class="mt-3">
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
     <div class="bottom-footer" style="background: #222;">
         <div class="container">
             <div class="row align-items-center justify-content-center py-4">
                 <div class="col-md-12">
-                    <p class="text-center text-white mb-0">Copyright <span>
-                            <script>document.write(new Date().getFullYear())</script>
-                        </span> &copy; <a href="https://softhostit.com/" target="_blank" style="color: var(--color-1) !important; text-decoration: none;">Soft Host IT</a> . All rights reserved </p>
+                    <h6 class="text-center text-white mb-0">Copyright <span>
+                            <span id="year"></span>
+                        </span> &copy; <a href="https://softhostit.com/" target="_blank" style="color: #B9FD50 !important; text-decoration: none;">Soft Host IT</a> . All rights reserved </h6>
                 </div>
             </div>
         </div>
