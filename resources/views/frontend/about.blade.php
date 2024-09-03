@@ -11,7 +11,7 @@
                     <a href="contact.html">Contact US</a>
                 </div>
                 <div class="col-md-6" style="text-align: right;">
-                    <img src="images/ceo.png" alt="">
+                    <img src="{{ asset('frontend/images/ceo.png') }}" alt="" class="pt-5">
                     <h1 class="text-white f-600">Palsah Hossain</h1>
                     <h2 class="text-white f-600">Soft Host IT, <span style="color: #B9FD50;">CEO</span></h2>
                 </div>

@@ -108,9 +108,13 @@
 </footer>
 <div class="bottom-footer" style="background: #222;">
     <div class="container">
-        <div class="row align-items-center justify-content-center py-4">
-            <div class="col-md-12">
-                <h6 class="text-center text-white mb-0">Copyright <span>
+        <div class="row align-items-center justify-content-center py-2">
+            <div class="col-md-6">
+                <img src="{{ asset('frontend/images/basis-logo.svg') }}" alt="basis logo" width="150px" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software" alt="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">
+                <img src="{{ asset('frontend/images/payment_method/ssl.svg') }}" alt="basis logo" width="150px" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software" alt="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">
+            </div>
+            <div class="col-md-6 text-right">
+                <h6 class="text-white mb-0" style="text-align: right !important">Copyright <span>
                         <span id="year"></span>
                     </span> &copy; <a href="https://softhostit.com/" target="_blank" style="color: #B9FD50 !important; text-decoration: none;">Soft Host IT</a> . All rights reserved </h6>
             </div>
