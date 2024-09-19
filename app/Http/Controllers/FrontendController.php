@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class FrontendController extends Controller
 {
@@ -58,5 +60,53 @@ class FrontendController extends Controller
 
     public function web_design(){
         return view('frontend.services.web-design');
+    }
+
+    public function contact_us(){
+        return view('frontend.contact-us');
+    }
+
+    public function contactsend(Request $request){
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required',
+            'message' => 'nullable',
+            'address' => 'nullable',
+        ]);
+
+        $reciptionistMail = "admin@softhostit.com";
+        $data = (object) [
+            'name' => $request->name,
+            'phone' => $request->phone,
+            'email' => $request->email,
+            'address' => $request->address,
+            'message' => $request->message,
+        ];
+        Mail::to($reciptionistMail)->send(new ContactMail($data));
+
+        session()->flash('success', 'Thank you for contact us. We will notify you through your email or phone number.');
+
+        return redirect()->back();
+    }
+
+    public function product(){
+        return view('frontend.product.index');
+    }
+
+    public function product_xprinter(){
+        return view('frontend.product.xprinter');
+    }
+
+    public function product_posprinter(){
+        return view('frontend.product.posprinter');
+    }
+
+    public function career(){
+        return view('frontend.career.index');
+    }
+
+    public function career_view(){
+        return view('frontend.career.view');
     }
 }

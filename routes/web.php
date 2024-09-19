@@ -17,6 +17,13 @@ Route::as('frontend.')->group(function () {
     Route::get('/logo', [FrontendController::class, 'logo'])->name('logo');
     Route::get('/sms-marketing', [FrontendController::class, 'sms_marketing'])->name('sms.marketing');
     Route::get('/web-design-development', [FrontendController::class, 'web_design'])->name('web.design');
+    Route::get('/contact-us', [FrontendController::class, 'contact_us'])->name('contact_us');
+    Route::post('/contact/send', [FrontendController::class, 'contactsend'])->name('contactsend');
+    Route::get('/product', [FrontendController::class, 'product'])->name('product');
+    Route::get('/product/xprinter', [FrontendController::class, 'product_xprinter'])->name('product.xprinter');
+    Route::get('/product/posprinter', [FrontendController::class, 'product_posprinter'])->name('product.posprinter');
+    Route::get('career', [FrontendController::class, 'career'])->name('career');
+    Route::get('career/view', [FrontendController::class, 'career_view'])->name('career.view');
 });
 
 

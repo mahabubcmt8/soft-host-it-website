@@ -32,7 +32,7 @@
                             <a class="nav-link active" aria-current="page" href="{{ route('frontend.index') }}" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#product" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Product</a>
+                            <a class="nav-link" href="{{ route('frontend.product') }}" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Product</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
@@ -94,7 +94,7 @@
                             <a class="nav-link" href="{{ route('frontend.payment') }}" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Payment</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:;" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Career</a>
+                            <a class="nav-link" href="{{ route('frontend.career') }}" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Career</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
@@ -103,7 +103,7 @@
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="{{ route('frontend.team') }}" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Team</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="javascript:;" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="{{ route('frontend.contact_us') }}" title="Domain Registration, & Web Hosting, Online business Accounting Billing Inventory Software, Web Design & Development, Web Application Development, Doamin Registration, cheap best web hosting service, POS Software">Contact Us</a></li>
                             </ul>
                         </li>
                     </ul>
